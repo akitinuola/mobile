@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/lightMode"
+        android:icon="@drawable/ic_baseline_light_mode_24"
+       app:showAsAction="always"
+        android:title="dsd"/>
+
+    <item android:id="@+id/darkMode"
+        android:icon="@drawable/ic_baseline_dark_mode_24"
+        app:showAsAction="always"
+        android:title="dsd"/>
+
+<!--    <item-->
+<!--        android:icon="@drawable/ic_baseline_more_vert_24"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="dsd"-->
+<!--        >-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                app:showAsAction="never"-->
+<!--                android:title="test"/>-->
+
+<!--            <item-->
+<!--                app:showAsAction="always"-->
+<!--                android:title="testing"/>-->
+
+<!--        </menu>-->
+<!--&lt;!&ndash;        <item android:id="@+id/v"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:icon="@drawable/ic_baseline_light_mode_24"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:showAsAction="always"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="dsd"/>&ndash;&gt;-->
+<!--    </item>-->
+<!--    <item android:id="@+id/darkMode"-->
+<!--        android:icon="@drawable/ic_help"-->
+<!--        android:title="@string/help" />-->
+</menu>

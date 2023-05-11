@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextEmailAddress"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Email address"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8C6CAE"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:outlineProvider="none"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="189dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:layout_gravity="center"
+                        android:paddingTop="50dp"
+                        android:src="@drawable/thinking_person"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="189dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="REMIND MY THOUGHTS"
+                        android:gravity="center"
+                        android:textColor="#F2F1F1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/background"
+                style="@style/CustomCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="2"
+                app:cardBackgroundColor="#F1F1F1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="REGISTRATION"
+                        android:textColor="#6A2987"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                    <EditText
+                        android:id="@+id/etSignupFullname"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Full name"
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintTop_toBottomOf="@id/textView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <EditText
+                        android:id="@+id/etSignupEmail"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Email "
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintTop_toBottomOf="@id/etSignupFullname"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="123dp" />
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/etSignupEmail"
+                        android:id="@+id/etSignupNumber"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Phone number"
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="187dp" />
+
+
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/etSignupNumber"
+                        android:id="@+id/etSignupPassword"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="250dp" />
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/etSignupPassword"
+                        android:id="@+id/etSignupConfirmPassword"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Confirm password"
+                        android:inputType="textPassword"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="313dp" />
+
+
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/etSignupConfirmPassword"
+                        android:id="@+id/etSignupUsername"
+                        android:layout_width="280dp"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="username"
+                        android:inputType="textEmailAddress"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="376dp" />
+
+                    <Button
+                        android:id="@+id/btnSignup"
+                        android:layout_width="332dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="56dp"
+                        android:backgroundTint="#6A2987"
+                        android:text="SIGN UP"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etSignupUsername" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

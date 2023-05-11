@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370713742778",
+    "project_id": "remindmythoughts",
+    "storage_bucket": "remindmythoughts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370713742778:android:ef9abf56721754abbb6183",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370713742778-jketc1hgdbdlrspls53484ifdqq781jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXo4xPxJ4Ze-hPx814GNIAbg19lDsg97M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370713742778-jketc1hgdbdlrspls53484ifdqq781jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
